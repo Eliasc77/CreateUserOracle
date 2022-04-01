@@ -39,3 +39,13 @@ grant create sequence to myuser;
 ```SQL
 grant all on nombredetabla to myuser;
 ```
+
+#### revocar los privilegios
+```sql
+revoke all on nombredetable from myuser;
+```
+
+> ELIMINAR EL USUARIO
+```sql
+drop user myuser cascade;
+```
