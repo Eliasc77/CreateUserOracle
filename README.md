@@ -40,7 +40,7 @@ grant create sequence to myuser;
 grant all on nombredetabla to myuser;
 ```
 
-#### revocar los privilegios
+#### Revocar los privilegios
 ```sql
 revoke all on nombredetable from myuser;
 ```
