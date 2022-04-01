@@ -1,24 +1,36 @@
 # Crear Usuarios en Oracle
 
-> This is how u can create a user in oracle
+> CREACION DE USUARIOS :
 
 ``` sql
 create user myuser identify by password
 default tablespace system
 temporary tablespace temp
 quota unlimited on system;
-
 ```
-> Para que el usuario pueda iniciar sesion se le tiene que otorgar los privilegios de session.
 
+> Privilegios de Usuario
+## Para que el usuario pueda iniciar sesion se le tiene que otorgar los privilegios de session.
 ``` sql
 grant create session myuser;
 ```
 
-> Privilegios para que el usuario pueda crear tablas.
-
+## Privilegios para que el usuario pueda crear tablas.
 ``` sql
 grant create table to myuser;
 ```
 
+## Privilegios para que el usuario pueda crear vistas.
+``` sql
+grant create view to myuser;
+```
 
+## Privilegios para que el usuario pueda crear Procedimientos dentro de la base de datos.
+``` sql
+grant create procedure to myuser;
+```
+
+## Privilegios para que el usuario pueda crear secuencias.
+``` sql
+grant create sequence to myuser;
+```
