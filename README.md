@@ -11,9 +11,14 @@ quota unlimited on system;
 ```
 > Para que el usuario pueda iniciar sesion se le tiene que otorgar los privilegios de session.
 
-```oracle
-gran create session myuser;
+``` sql
+grant create session myuser;
 ```
 
+> Privilegios para que el usuario pueda crear tablas.
+
+``` sql
+grant create table to myuser;
+```
 
 
